@@ -2,14 +2,14 @@ import React from "react";
 import Container from "./container";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
-import SectionTitle from "./sectiontitle";
+import Sectiontitle from "./sectiontitle";
 export default function Faq() {
   return (
     <Container>
-     <SectionTitle pretitle="FAQ" title="VEEL GESTELDE ALGEMEEN VRAGEN">
+     <Sectiontitle pretitle="FAQ" title="VEEL GESTELDE ALGEMEEN VRAGEN">
           Answer your customers possible questions here, it will increase the
           conversion rate as well as support or chat requests.
-        </SectionTitle>
+        </Sectiontitle>
     <Container className="!p-0 flex-auto flex items-stretch">
     <div className="max-w-2xl p-2 mx-auto rounded-2xl ">
     

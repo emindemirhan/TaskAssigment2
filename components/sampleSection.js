@@ -2,17 +2,17 @@ import Image from "next/image";
 
 import React from "react";
 import Container from "./container";
-import SectionTitle from "./sectiontitle";
+import Sectiontitle from "./sectiontitle";
 
 export default function SampleSection(props) {
   const { data } = props;
 
   return (
     <>
-      <SectionTitle pretitle="vision" title="OUR VİSİON">
+      <Sectiontitle pretitle="vision" title="OUR VİSİON">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam
-      </SectionTitle>
+      </Sectiontitle>
       <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
         <div
           className={`flex items-center justify-center w-full lg:w-1/2 ${

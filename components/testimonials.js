@@ -6,14 +6,14 @@ import userOneImg from "../public/img/user1.jpg";
 import userTwoImg from "../public/img/user2.jpg";
 import userThreeImg from "../public/img/user3.jpg";
 import { AiFillStar } from "react-icons/ai";
-import SectionTitle from "./sectiontitle";
+import Sectiontitle from "./sectiontitle";
 export default function Testimonials() {
   return (
     <Container className="bg-slate-200 rounded-sm">
-      <SectionTitle pretitle="Testimonials" title="WAT ZEGGEN ONZE GAMERS">
+      <Sectiontitle pretitle="Testimonials" title="WAT ZEGGEN ONZE GAMERS">
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
-      </SectionTitle>
+      </Sectiontitle>
       <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-blue-400 px-14 rounded-2xl py-14 ">
