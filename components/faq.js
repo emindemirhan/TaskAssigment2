@@ -14,11 +14,11 @@ export default function Faq() {
     <div className="max-w-2xl p-2 mx-auto rounded-2xl ">
     
     {faqdata.map((item, index) => (
-      <div key={item.question} className="mb-5 items-stretch ...">
+      <div key={item.question} className="">
         <Disclosure>
           {({ open }) => (
             <div>
-              <Disclosure.Button className="flex font-bold justify-between w-full px-4 py-4 sm:text-sm lg:text-lgtext-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
+              <Disclosure.Button className="flex font-semibold  justify-between w-full px-4 py-4 sm:text-sm lg:text-lgtext-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
                 <span>{item.question}</span>
                 <ChevronUpIcon
                   className={`${
@@ -36,31 +36,7 @@ export default function Faq() {
       
     ))}
   </div>
-      <div className="max-w-2xl p-2 mx-auto rounded-2xl ">
-    
-        {faqdata.map((item, index) => (
-          <div key={item.question} className="mb-5 items-stretch ...">
-            <Disclosure>
-              {({ open }) => (
-                <div>
-                  <Disclosure.Button className="flex font-bold justify-between w-full px-4 py-4 sm:text-sm lg:text-lgtext-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
-                    <span>{item.question}</span>
-                    <ChevronUpIcon
-                      className={`${
-                        open ? "transform rotate-180 w-11 h-11" : ""
-                      } w-11 h-11  text-indigo-500`}
-                    />
-                  </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2 font-bold text-gray-500 dark:text-gray-300">
-                    {item.answer}
-                  </Disclosure.Panel>
-                </div>
-              )}
-            </Disclosure>
-          </div>
-          
-        ))}
-      </div>
+      
     </Container>
     </Container>
   );
@@ -88,4 +64,5 @@ const faqdata = [
     answer:
       "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
   },
+  
 ];

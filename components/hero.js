@@ -17,7 +17,7 @@ export default function Hero() {
               wie ga jij de uit dagging aan?
             </p>
 
-            <div className="flex-auto  flex space-x-14 lg:items-start   sm:flex">
+            <div className="flex-auto  flex space-x-7 lg:items-start   sm:flex">
               <a
                 href=""
                 target="_blank"
@@ -30,7 +30,7 @@ export default function Hero() {
                 href=""
                 target="_blank"
                 rel="noopener"
-                className="px-8 py-4 sm:items-center text-xl font-medium text-center text-white  bg-purple-500 rounded-md "
+                className="px-8 py-4 sm:items-center  text-xl font-medium text-center text-white  bg-purple-500 rounded-md "
               >
                 GROEPEN
               </a>

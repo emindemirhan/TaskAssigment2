@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-
+import Design from "./design";
 import userOneImg from "../public/img/user1.jpg";
 import userTwoImg from "../public/img/user2.jpg";
 import userThreeImg from "../public/img/user3.jpg";
@@ -14,35 +14,36 @@ export default function Testimonials() {
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
       </Sectiontitle>
-      <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
-        <div className="lg:col-span-2 xl:col-auto">
-          <div className="flex flex-col justify-between w-full h-full bg-blue-400 px-14 rounded-2xl py-14 ">
-            <div className="text-5xl sm:pl-24 lg:pl-12 text-yellow-400 pl-12 pb-5 flex items-stretch ...">
-              <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />{" "}
-              <AiFillStar />
+      <Design >
+        <div className="grid  gap-5  lg:grid-cols-2 xl:grid-cols-3">
+          <div className="lg:col-span-1 xl:col-auto">
+            <div className="flex flex-col justify-between  bg-blue-400 px-12 rounded-2xl py-14 ">
+              <div className="text-5xl sm:pl-24 lg:pl-12 text-yellow-400 pl-12 pb-5 flex items-stretch ...">
+                <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />{" "}
+                <AiFillStar />
+              </div>
+
+              <p className="text-2xl font-semibold leading-normal ">
+                et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi
+              </p>
+
+              <Avatar
+                image={userOneImg}
+                name="Sarah Steiner"
+                title="VP Sales at Google"
+              />
             </div>
-
-            <p className="text-2xl leading-normal ">
-              et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-              ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-              sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi
-            </p>
-
-            <Avatar
-              image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
-            />
           </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-blue-400 px-14 rounded-2xl py-14 ">
+
+          <div className="flex flex-col justify-between w-full h-full bg-blue-400 px-10 rounded-2xl py-14 ">
             <div className="text-5xl sm:pl-24 lg:pl-12 text-yellow-400 pl-12 pb-5 flex items-stretch ...">
               <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />{" "}
               <AiFillStar />
             </div>
-            <p className="text-2xl leading-normal ">
+            <p className="text-2xl font-semibold leading-normal ">
               et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
               ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
               sed quia consequuntur magni dolores eos qui ratione voluptatem
@@ -55,14 +56,12 @@ export default function Testimonials() {
               title="Lead marketer at Netflix"
             />
           </div>
-        </div>
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-blue-400 px-14 rounded-2xl py-14 ">
+          <div className="flex flex-col justify-between w-full h-full bg-blue-400 px-10 rounded-2xl py-14 ">
             <div className="text-5xl sm:pl-24 lg:pl-12 text-yellow-400 pl-12 pb-5 flex items-stretch ...">
               <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />{" "}
               <AiFillStar />
             </div>
-            <p className="text-2xl  leading-normal ">
+            <p className="text-2xl font-semibold leading-normal ">
               et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
               ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
               sed quia consequuntur magni dolores eos qui ratione voluptatem
@@ -71,12 +70,14 @@ export default function Testimonials() {
 
             <Avatar
               image={userThreeImg}
-              name="Mark Zukerbork"
-              title="Co-founder of FaceBook"
+              name="Dylan Ambrose"
+              title="Lead marketer at Netflix"
             />
           </div>
+
+         
         </div>
-      </div>
+      </Design>
     </Container>
   );
 }

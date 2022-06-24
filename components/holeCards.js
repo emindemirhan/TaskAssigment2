@@ -11,7 +11,7 @@ export default function HoleCards() {
         accusantium doloremque laudantium, totam
       </Sectiontitle>
 
-      <Container className=" bg-blue-400 rounded-xl  lg:flex items-stretch ...">
+      <Container className=" bg-blue-400 rounded-xl   lg:flex items-stretch ...">
         <Card />
         <Card />
         <Card />
