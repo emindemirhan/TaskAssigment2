@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { fromJSON } from "postcss";
+
 import React from "react";
 import Container from "./container";
 import SectionTitle from "./sectiontitle";

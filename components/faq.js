@@ -2,7 +2,7 @@ import React from "react";
 import Container from "./container";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
-import SectionTitle from "../components/sectiontitle";
+import SectionTitle from "./sectiontitle";
 export default function Faq() {
   return (
     <Container>
